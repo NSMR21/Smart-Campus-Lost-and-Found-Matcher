@@ -1,0 +1,35 @@
+{
+  "name": "smart-campus-lost-found",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Campus Lost & Found Management and Matching System - DBMS mini project (MySQL + LanceDB vector DB + Next.js)",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node scripts/setup-db.mjs",
+    "db:test": "node scripts/test-db.mjs",
+    "vector:sync": "node scripts/sync-vectors.mjs",
+    "vector:demo": "node scripts/vector-demo.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "@lancedb/lancedb": "0.40.0",
+    "apache-arrow": "18.1.0",
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.13",
+    "mysql2": "3.24.6",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "overrides": {
+    "@lancedb/lancedb": {
+      "@huggingface/transformers": "$@huggingface/transformers"
+    }
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}
