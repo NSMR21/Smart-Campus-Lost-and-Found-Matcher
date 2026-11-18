@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1040" viewBox="0 0 1500 1040">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24.0" y="30.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="start" dominant-baseline="central">Smart Campus Lost &amp; Found - system architecture</text>
+<rect x="20" y="60" width="1460" height="170" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-dasharray="6 4"/>
+<text x="40.0" y="80.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="start" dominant-baseline="central">PRESENTATION  (browser)</text>
+<rect x="20" y="250" width="1460" height="430" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-dasharray="6 4"/>
+<text x="40.0" y="270.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="start" dominant-baseline="central">APPLICATION  (Next.js 16 server, Node.js)</text>
+<rect x="20" y="700" width="1460" height="320" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-dasharray="6 4"/>
+<text x="40.0" y="720.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="start" dominant-baseline="central">DATA</text>
+<rect x="60" y="95" width="420" height="120" rx="12" fill="#ecfeff" stroke="#334155" stroke-width="1.5"/>
+<text x="270.0" y="117.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">Student UI</text>
+<text x="270.0" y="141.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">report lost / found items</text>
+<text x="270.0" y="160.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">browse, smart search, claim</text>
+<text x="270.0" y="179.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">track claims, notifications</text>
+<rect x="540" y="95" width="420" height="120" rx="12" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+<text x="750.0" y="117.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">Staff UI</text>
+<text x="750.0" y="141.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">claims queue, verify ownership</text>
+<text x="750.0" y="160.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">record hand-over</text>
+<text x="750.0" y="179.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">reports &amp; analytics, SQL Lab</text>
+<rect x="1020" y="95" width="420" height="120" rx="12" fill="#fdf4ff" stroke="#334155" stroke-width="1.5"/>
+<text x="1230.0" y="117.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">Admin UI</text>
+<text x="1230.0" y="141.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">users &amp; roles, RBAC matrix</text>
+<text x="1230.0" y="160.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">categories &amp; locations</text>
+<text x="1230.0" y="179.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">vector DB console, audit log</text>
+<rect x="60" y="290" width="300" height="150" rx="12" fill="#fff7ed" stroke="#334155" stroke-width="1.5"/>
+<text x="210.0" y="312.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">proxy.js</text>
+<text x="210.0" y="336.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">runs before every page</text>
+<text x="210.0" y="355.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">verifies the JWT cookie</text>
+<text x="210.0" y="374.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">redirects to /login</text>
+<rect x="400" y="290" width="480" height="150" rx="12" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+<text x="640.0" y="312.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">Pages (React Server Components)</text>
+<text x="640.0" y="336.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">app/(app)/**/page.js</text>
+<text x="640.0" y="355.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">read data directly through lib/data.js</text>
+<text x="640.0" y="374.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">role-aware navigation from permissions</text>
+<rect x="920" y="290" width="520" height="150" rx="12" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+<text x="1180.0" y="312.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">REST API (Route Handlers)</text>
+<text x="1180.0" y="336.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">app/api/**/route.js  -  JSON in / out</text>
+<text x="1180.0" y="355.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">auth · lost · found · matches · claims · search</text>
+<text x="1180.0" y="374.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">reports · admin · vector · sql-lab</text>
+<rect x="60" y="480" width="300" height="170" rx="12" fill="#fef2f2" stroke="#334155" stroke-width="1.5"/>
+<text x="210.0" y="502.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">lib/auth.js + lib/api.js</text>
+<text x="210.0" y="526.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">bcrypt password check</text>
+<text x="210.0" y="545.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">JWT session (httpOnly cookie)</text>
+<text x="210.0" y="564.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">requirePermission() -&gt;</text>
+<text x="210.0" y="583.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">SELECT fn_has_permission()</text>
+<rect x="400" y="480" width="300" height="170" rx="12" fill="#f0fdf4" stroke="#334155" stroke-width="1.5"/>
+<text x="550.0" y="502.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">lib/data.js · lib/db.js</text>
+<text x="550.0" y="526.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">hand-written SQL, mysql2 pool</text>
+<text x="550.0" y="545.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">views, CTEs, FULLTEXT search</text>
+<text x="550.0" y="564.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">CALL stored procedures</text>
+<text x="550.0" y="583.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">SET @app_user_id (audit)</text>
+<rect x="740" y="480" width="340" height="170" rx="12" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+<text x="910.0" y="502.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">lib/matching.js</text>
+<text x="910.0" y="526.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">1. rule candidates (SQL proc)</text>
+<text x="910.0" y="545.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">2. nearest neighbours (vector DB)</text>
+<text x="910.0" y="564.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">3. CALL sp_upsert_match</text>
+<text x="910.0" y="583.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">total = 0.6 rule + 0.4 semantic</text>
+<rect x="1120" y="480" width="320" height="170" rx="12" fill="#fdf4ff" stroke="#334155" stroke-width="1.5"/>
+<text x="1280.0" y="502.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle" dominant-baseline="central">lib/embeddings.js · vectorStore.js</text>
+<text x="1280.0" y="526.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">all-MiniLM-L6-v2 (ONNX, local)</text>
+<text x="1280.0" y="545.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">text -&gt; 384-d vector</text>
+<text x="1280.0" y="564.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">LanceDB create / search /</text>
+<text x="1280.0" y="583.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">update / delete</text>
+<rect x="60" y="745" width="860" height="255" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+<text x="490.0" y="767.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#14532d" text-anchor="middle" dominant-baseline="central">MySQL 8  -  campus_lostfound  (source of truth)</text>
+<text x="490.0" y="791.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">18 tables in 3NF with PK / FK / UNIQUE / CHECK constraints and indexes (composite, FULLTEXT)</text>
+<text x="490.0" y="810.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">5 functions: fn_has_permission, fn_rule_match_score, fn_category_root, ...</text>
+<text x="490.0" y="829.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">14 procedures with transactions: sp_submit_claim, sp_verify_claim, sp_record_return, ...</text>
+<text x="490.0" y="848.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">22 triggers: validation, status cascade, notifications, audit log</text>
+<text x="490.0" y="867.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">11 views: vw_found_items_public (no hidden marks), vw_category_tree (recursive CTE), ...</text>
+<text x="490.0" y="886.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">RBAC tables roles / permissions / role_permissions</text>
+<text x="490.0" y="905.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">native MySQL roles: lf_student_role &lt; lf_staff_role &lt; lf_admin_role, app account lf_app</text>
+<rect x="960" y="745" width="480" height="255" rx="12" fill="#fdf4ff" stroke="#a21caf" stroke-width="1.5"/>
+<text x="1200.0" y="767.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#701a75" text-anchor="middle" dominant-baseline="central">LanceDB vector database (embedded)</text>
+<text x="1200.0" y="791.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">table item_vectors in ./data/lancedb</text>
+<text x="1200.0" y="810.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">one document per lost / found report:</text>
+<text x="1200.0" y="829.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">id, kind, status, dates, category, location ...</text>
+<text x="1200.0" y="848.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">+ vector FixedSizeList&lt;Float32&gt;[384]</text>
+<text x="1200.0" y="867.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">scalar indexes: BTree(id, category_id),</text>
+<text x="1200.0" y="886.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">Bitmap(kind, status); IVF-PQ when 256+ rows</text>
+<text x="1200.0" y="905.0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central">cosine nearest-neighbour search with filters</text>
+<polyline points="270.0,215.0 270.0,286.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="278.0" y="252.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">HTTPS</text>
+<polyline points="750.0,215.0 640.0,286.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="703.0" y="252.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">pages</text>
+<polyline points="1230.0,215.0 1180.0,286.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1213.0" y="252.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">fetch JSON</text>
+<polyline points="210.0,440.0 210.0,476.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="640.0,440.0 550.0,476.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="1180.0,440.0 910.0,476.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="1180.0,440.0 1280.0,476.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="550.0,650.0 490.0,741.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="528.0" y="697.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">SQL</text>
+<polyline points="910.0,650.0 700.0,741.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="813.0" y="697.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">CALL / SELECT</text>
+<polyline points="1280.0,650.0 1200.0,741.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1248.0" y="697.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">vectors</text>
+<polyline points="210.0,650.0 300.0,741.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="263.0" y="697.5" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10.5" font-weight="bold" fill="#475569" text-anchor="start" dominant-baseline="central">fn_has_permission</text>
+</svg>
